@@ -34,6 +34,11 @@ def Response_my(request):
     return render (request,"response.html")
 
 
+def record(request):
+    data = mail.objects.all()
+    return render (request, 'record.html', {'data' : data})
+
+
 # def contact(request):
 #     id = request.GET.get("id",None)
 #     if id is not None:

@@ -8,5 +8,16 @@ class mail(models.Model):
     message = models.TextField()
     
     
-class Meta:
-    db_table ="mail"
+    class Meta:
+        db_table ="mail"
+    
+    
+class joshuamail(models.Model):
+    name = models.CharField(max_length=50)
+    email = models.EmailField(max_length=254)
+    message = models.TextField()
+    
+    
+    class Meta:
+        db_table ="joshuamail"    
+    

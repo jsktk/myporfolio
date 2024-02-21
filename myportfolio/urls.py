@@ -23,5 +23,6 @@ urlpatterns = [
     path('', views.index),
     path('index', views.index),
     path('send_mail', views.send_mail_view),
-    path('response', views.Response_my)
+    path('response', views.Response_my),
+    path('record', views.record)
 ]
